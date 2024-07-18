@@ -1,6 +1,6 @@
-import HeaderBox from '@/components/ui/HeaderBox'
+import HeaderBox from '@/components/HeaderBox'
 //import { Pagination } from '@/components/ui/Pagination';
-import TransactionsTable from '@/components/ui/TransactionsTable';
+import TransactionsTable from '@/components/TransactionsTable';
 import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
 import { formatAmount } from '@/lib/utils';
@@ -22,7 +22,7 @@ const TransactionHistory = async ({ searchParams: { id, page }}:SearchParamProps
 
 
 const rowsPerPage = 10;
-const totalPages = Math.ceil(account?.transactions.length / rowsPerPage);
+//const totalPages = Math.ceil(account?.transactions.length / rowsPerPage);
 
 const indexOfLastTransaction = currentPage * rowsPerPage;
 const indexOfFirstTransaction = indexOfLastTransaction - rowsPerPage;
@@ -57,16 +57,16 @@ const currentTransactions = account?.transactions.slice(
           </div>
         </div>
 
-        {/* <section className="flex w-full flex-col gap-6">
+        <section className="flex w-full flex-col gap-6">
           <TransactionsTable 
             transactions={currentTransactions}
           />
-            {totalPages > 1 && (
+            {/* {totalPages > 1 && (
               <div className="my-4 w-full">
                 <Pagination totalPages={totalPages} page={currentPage} />
               </div>
-            )}
-        </section> */}
+            )} */}
+        </section>
       </div>
     </div>
   )
