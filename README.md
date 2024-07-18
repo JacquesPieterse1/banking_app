@@ -1,5 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A Fintech Bank Application
 
+This project was created by following along a tutorial. Watch the tutorial [here](https://www.youtube.com/watch?v=PuOVqP_cjkE)
+
+## ⚙️ Tech Stack 
+
+- Next.js
+- TypeScript
+- Appwrite
+- Plaid
+- Dwolla
+- React Hook Form
+- Zod
+- TailwindCSS
+- Chart.js
+- ShadCN
+
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Getting Started
 
 First, run the development server:
