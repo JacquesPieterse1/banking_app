@@ -128,7 +128,7 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
 
     return parseStringify({
       data: account,
-    //   transactions: allTransactions,
+      transactions: allTransactions,
     });
   } catch (error) {
     console.error("An error occurred while getting the account:", error);
